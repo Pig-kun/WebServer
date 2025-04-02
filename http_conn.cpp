@@ -76,7 +76,9 @@ bool http_conn::write(){
 void http_conn::process(){
 
     // 解析HTTP请求
-    printf("parse request\n");
 
+    printf("parse request\n");
+    
+    modfd(m_epollfd, m_sockfd, EPOLLIN);
     //生成响应
 }
