@@ -44,7 +44,7 @@ private:
 template<typename T>
 threadpool<T>::threadpool(int thread_number, int max_requests):
     m_thread_number(thread_number),m_max_requests(max_requests),
-    m_stop(false), mthread(NULL){
+    m_stop(false), m_threads(NULL){
 
     if(thread_number <= 0 || max_requests <= 0){
         throw std::exception(); // 线程数量和请求数量必须大于0
