@@ -123,7 +123,7 @@ int main(int argc, char* argv[]){
 
                 if(http_conn::m_user_count >= MAX_FD){ // 如果用户数量超过最大值
                     // 目前连接满了
-                    // 给客户端写一个信息：服务器内部正忙
+                    // 给客户端写一个信息：服务器内部正忙 
                     close(connfd); // 关闭连接
                     continue;
                 }
