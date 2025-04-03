@@ -1,5 +1,6 @@
 #ifndef HTTPCONNECTION_H
 #define HTTPCONNECTION_H
+#pragma once
 #include <iostream>
 #include <sys/epoll.h>
 #include <cstdio>
